@@ -1,1 +1,3 @@
-Company Home Page - Codecademy Project
+#Company Home Page - Codecademy Project
+
+**Guitar Makers**
