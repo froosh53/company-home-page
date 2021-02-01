@@ -12,6 +12,8 @@ body {
 nav {
     margin: 0 10%;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 
 ul {    
@@ -37,6 +39,7 @@ li a:hover {
     background-color: #d19d33;
     font-weight: bold;
 }
+
 
 /* Main */
 
