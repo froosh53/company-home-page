@@ -1,3 +1,43 @@
+/* Universal Styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: black;
+    background-color: #edd9af;
+    text-align: center;
+}
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;   
+    overflow: hidden; 
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #dfbb71;
+    display: inline-block;
+}
+
+li a:hover {
+    background-color: #d19d33;
+    font-weight: bold;
+}
+
 .product img {
     width: 200px;
     height: auto;
