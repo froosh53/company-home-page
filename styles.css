@@ -1,7 +1,13 @@
+/*Soft Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 /* Universal Styles */
-body {
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {    
+    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     color: black;
     background-color: #edd9af;
@@ -9,50 +15,81 @@ body {
 }
 
 /* Header */
-nav {
-    margin: 0 10%;
-    padding-bottom: 50px;
+header {
     display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.logo-container, .nav-links {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
     justify-content: space-around;
+    list-style: none;    
 }
 
-ul {    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline-block;
-    padding: 10px;
-}
-
-li a {
+.nav-link {
     text-decoration: none;
     color: black;
-    background-color: #dfbb71;
-    padding: 10px;
-    margin: 10px;
+    font-size: 26px;
 }
-
-li a:hover {
-    background-color: #d19d33;
-    font-weight: bold;
-}
-
 
 /* Main */
 
 #mission {
+    width: 70%;
+    margin: auto;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+#mission:after {    /* opacity for background */
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url(https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.6;
+    z-index: -1;
 }
 
 #mission .content {
-    background-color: #edd9af;
-    margin: 0;
-    padding: 10px 0px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*background-color: #edd9af;*/
+}
+
+#mission .content h2 {
+    font-size: 3.25em;
+}
+
+#mission .content h4 {
+    font-size: 1.5em;
+    line-height: 2
 }
 
 #products {
@@ -81,7 +118,6 @@ li a:hover {
     text-align: center;
     display: flex;
     align-items: center;
-    font-weight: bold;
 }
 
 .team {
